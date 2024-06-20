@@ -1,0 +1,237 @@
+/* main 영역 */
+
+.main {
+  border: 2px solid hotpink;
+  position: relative;
+  display: flex;
+  width: 1280px;
+  height: 2360px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.section {
+  border: 2px solid blue;
+  width: 830px;
+  height: 2300px;
+}
+
+.aside {
+  border: 2px solid blue;
+  width: 420px;
+  height: 2014px;
+  margin-left: 30px;
+}
+
+/* aside 영역 */
+.aside-box {
+  display: block;
+  margin-top: 15px;
+  width: 420px;
+  background-color: var(--color_block_bg);
+  position: relative;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+}
+
+.aside__login-box {
+  height: 164px;
+  padding: 21px 20px 18px;
+  margin-top: 0;
+}
+.aside__login-des {
+  width: 380px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  /* font-size: 1.4rem; */
+}
+
+.aside__login {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 13px 0;
+  padding: 17px 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  background-color: #03c75a;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(3, 199, 90, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(3, 199, 90, 0.12);
+  text-decoration: none;
+  color: #fff;
+}
+
+.aside__login-img {
+  width: 72px;
+  height: 14px;
+  margin: 3px 10px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -142px -270px;
+  background-repeat: no-repeat;
+}
+
+.aside__login-info-box {
+  width: 380px;
+  height: 20px;
+}
+
+.aside__login-info-list {
+  display: flex;
+  justify-content: center;
+}
+
+.aside__login-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.aside__login-info-link {
+  display: block;
+  margin: 0px 12px 0;
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+.aside__login-bar {
+  width: 1px;
+  height: 12px;
+  background-color: #d3d5d7;
+}
+
+.aside__add-box {
+  padding: 18px 18px 0;
+  height: 240px;
+  color: black;
+}
+
+.aside__add-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.asdie__add-img-box {
+  width: 195px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.asdie__add-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.asdie__add-des {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  width: 180px;
+  height: 130px;
+  border-top: 1px solid #e3e5e8;
+  border-bottom: 1px solid #e3e5e8;
+  color: #303038;
+  font-size: 17px;
+}
+
+.asdie__add-brand-img-box {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  margin-top: 15px;
+}
+
+.asdie__add-brand-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.asdie__add-brand-name {
+  position: absolute;
+  bottom: 20px;
+  left: 45px;
+  color: #424244;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.asdie__add-buy-link {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  color: #505052;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.aside__weather-info-box {
+  display: block;
+  padding: 8px 18px;
+  margin-top: 15px;
+  height: 56px;
+}
+
+.aside__weather-info-important {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  width: 70px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #e64746;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+}
+
+.aside__weather-info-des {
+  position: absolute;
+  top: 19px;
+  left: 95px;
+  color: black;
+  font-weight: bold;
+}
+
+.aside__weather-box {
+  padding: 0 18px;
+  height: 236px;
+}
+
+.aside__weather-title {
+  border: 1px solid black;
+  padding: 6px 0;
+  width: 50px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.aside__weather-compare {
+  width: 200px;
+  height: 26px;
+  border: 1px solid #e3e5e8;
+  border-radius: 15px;
+  color: #606060;
+  background-image: url(../assets/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -208px -422px;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 12px;
+  margin: 6px 2px 0 0;
+  vertical-align: top;
+}
