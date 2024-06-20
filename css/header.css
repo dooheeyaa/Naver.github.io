@@ -1,0 +1,216 @@
+.wrap {
+  border: 2px solid red;
+  min-width: 1340px;
+}
+
+.header {
+  border: 2px solid green;
+  position: relative;
+  width: 1280px;
+  height: 216px;
+  margin: 0 auto;
+}
+
+.header__menu-link {
+  border: 2px solid green;
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-image: url(../assets/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-repeat: no-repeat;
+}
+
+.header__menu-link--01 {
+  background-position: -326px -161px;
+  top: 5px;
+}
+
+.header__menu-link--02 {
+  background-position: -285px -41px;
+  top: 5px;
+  left: 41px;
+}
+
+.header__menu-link--03 {
+  background-position: -285px -173px;
+  top: 5px;
+  right: 104px;
+}
+
+.header__menu-link--04 {
+  background-position: -326px -227px;
+  top: 5px;
+  right: 52px;
+}
+
+.header__menu-link--05 {
+  background-position: -285px -107px;
+  top: 5px;
+  right: 0px;
+  /* right: -10px; */
+}
+
+/* search-wrap */
+.search-wrap {
+  border: 2px solid hotpink;
+  position: relative;
+  width: 1280px;
+  height: 156px;
+  padding: 52px 0 8px;
+}
+
+.search-bar {
+  position: absolute;
+  top: 52px;
+  left: 50%;
+  z-index: 10;
+  width: 706px;
+  height: 60px;
+  border: 1px solid #03c75a;
+  border-radius: 33px;
+  background-color: #fff;
+  transform: translateX(-50%);
+}
+
+.search-logo {
+  border: 1px solid black;
+  width: 67px;
+  height: 60px;
+}
+
+.search-box {
+  border: 1px solid black;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 61px;
+  bottom: 0;
+  z-index: 210;
+  width: 56px;
+}
+
+.search-keyboard-btn {
+  border: 1px solid red;
+  display: block;
+  width: 24px;
+  height: 14px;
+  margin: 22px 3px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -290px -270px;
+  background-repeat: no-repeat;
+}
+
+.search-tr-btn {
+  display: block;
+  width: 10px;
+  height: 6px;
+  margin: 26px 6px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -123px -98px;
+  background-repeat: no-repeat;
+}
+
+.search-btn {
+  border: 1px solid green;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 62px;
+  height: 58px;
+}
+
+.shortcut-list {
+  display: flex;
+  position: relative;
+  width: 676px;
+  height: 68px;
+  margin: 68px auto 0;
+}
+
+.shortcut-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 68px;
+}
+
+.shortcut-link {
+  /* border: 1px solid red; */
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-image: url(../assets/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -193px 0px;
+  background-repeat: no-repeat;
+  text-decoration: none;
+}
+
+.shorcut-icon {
+  /* border: 1px solid red; */
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 2px 5px;
+  background-image: url(../assets/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-repeat: no-repeat;
+}
+
+.shorcut-icon--01 {
+  background-position: -244px -41px;
+}
+
+.shorcut-icon--02 {
+  background-position: -86px -184px;
+}
+
+.shorcut-icon--03 {
+  background-position: -45px -184px;
+}
+
+.shorcut-icon--04 {
+  background-position: -164px -229px;
+}
+
+.shorcut-icon--05 {
+  background-position: -82px -229px;
+}
+
+.shorcut-icon--06 {
+  background-position: -205px -229px;
+}
+
+.shorcut-icon--07 {
+  background-position: -123px -229px;
+}
+
+.shorcut-icon--08 {
+  background-position: -244px -82px;
+}
+
+.shorcut-icon--09 {
+  background-position: -285px 0px;
+}
+
+.shorcut-icon--10 {
+  /* background-position: -193px 0px; */
+}
+
+.shorcut-icon--11 {
+  background-position: -41px -229px;
+}
+
+.shorcut-text {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.9rem;
+  line-height: 20px;
+  text-align: center;
+  color: black;
+}
