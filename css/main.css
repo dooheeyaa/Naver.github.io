@@ -10,6 +10,7 @@
   padding-bottom: 60px;
 }
 
+/* main - 구역 나누기 */
 .section {
   border: 2px solid blue;
   width: 830px;
@@ -17,9 +18,8 @@
 }
 
 .aside {
-  border: 2px solid blue;
   width: 420px;
-  height: 2014px;
+  height: 2094px;
   margin-left: 30px;
 }
 
@@ -36,6 +36,7 @@
   text-decoration: none;
 }
 
+/* 로그인 */
 .aside__login-box {
   height: 164px;
   padding: 21px 20px 18px;
@@ -46,7 +47,6 @@
   height: 20px;
   line-height: 20px;
   text-align: center;
-  /* font-size: 1.4rem; */
 }
 
 .aside__login {
@@ -102,6 +102,7 @@
   background-color: #d3d5d7;
 }
 
+/* 광고 */
 .aside__add-box {
   padding: 18px 18px 0;
   height: 240px;
@@ -174,6 +175,7 @@
   font-weight: 500;
 }
 
+/* /-날씨 */
 .aside__weather-info-box {
   display: block;
   padding: 8px 18px;
@@ -209,10 +211,9 @@
   height: 236px;
 }
 
-.aside__weather-title {
-  border: 1px solid black;
-  padding: 6px 0;
-  width: 50px;
+.aside__title {
+  padding: 16px 0;
+  width: 70px;
   color: black;
   font-size: 18px;
   font-weight: bold;
@@ -221,17 +222,344 @@
 }
 
 .aside__weather-compare {
-  width: 200px;
+  position: absolute;
+  top: 14px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  width: 95px;
   height: 26px;
   border: 1px solid #e3e5e8;
   border-radius: 15px;
   color: #606060;
-  background-image: url(../assets/sp_main.712d35ae.png);
+  font-size: 15px;
+}
+
+.aside__weather-compare-icon {
+  margin: 0 8px;
+  width: 12px;
+  height: 12px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
   background-size: 442px 434px;
   background-position: -208px -422px;
   background-repeat: no-repeat;
-  width: 12px;
-  height: 12px;
-  margin: 6px 2px 0 0;
-  vertical-align: top;
+}
+
+.aside__title-des {
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  color: #606060;
+}
+
+.aside__bar {
+  display: flex;
+  position: relative;
+  border-top: 1px solid #e3e5e8;
+  box-sizing: border-box;
+  width: 384px;
+  height: 183px;
+}
+
+.aside__weather-left {
+  position: relative;
+  box-sizing: border-box;
+  width: 180px;
+  height: 183px;
+  margin-right: 24px;
+}
+
+.aside__weather-right {
+  border: 2px solid gray;
+  box-sizing: border-box;
+  width: 180px;
+  height: 183px;
+}
+
+.aside__weather-left-img {
+  width: 86px;
+  height: 86px;
+  margin-right: 4px;
+  display: block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+  background-size: 641px 587px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.aside__weather-left-temp {
+  width: 86px;
+  height: 63px;
+}
+
+.aside__weather-left-temp {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 40px;
+  color: black;
+}
+
+.aside__weather-left-temp-des {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aside__weather-left-cmp {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  width: 60px;
+}
+
+.aside__weather-left-temp-low {
+  color: #3172e7;
+  font-weight: 500;
+}
+
+.aside__weather-left-temp-high {
+  color: #cd3534;
+  font-weight: 500;
+}
+
+.aside__weather-left-temp-bar {
+  width: 1px;
+  height: 11px;
+  background-color: #d3d5d7;
+  margin: 0 5px 0 3px;
+  transform: skewX(-15deg);
+  vertical-align: -1px;
+}
+
+.adie__weather-left-dust-box {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 1px;
+  width: 170px;
+}
+
+.aside__weather-left-dust,
+.aside__weather-left-semi-dust {
+  color: #101010;
+}
+
+.aside__weather-left-semi-dust {
+  margin-left: 15px;
+}
+
+.aside__weather-left-dust-des {
+  padding-left: 4px;
+  color: #02c73c;
+}
+
+.aside__weather-right-time-temp {
+  border: 1px solid red;
+  width: 32px;
+  height: 143px;
+}
+
+/* 주식 */
+.aside-cost-box {
+  padding: 0 18px;
+  height: 236px;
+}
+
+.aside-cost-icon {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -169px -401px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.aside__cost-dollar {
+  position: absolute;
+  top: 70px;
+  font-size: 16px;
+  color: #101010;
+}
+
+.aside__cost-price {
+  position: absolute;
+  top: 90px;
+  font-size: 30px;
+  color: #101010;
+}
+
+.aside__cost-change {
+  position: absolute;
+  top: 125px;
+  left: 20px;
+  color: #2196f3;
+}
+
+.aside__cost-graph-box {
+  position: absolute;
+  bottom: 40px;
+  box-sizing: border-box;
+  width: 180px;
+  height: 44px;
+}
+
+.aside__cost-graph {
+  width: 180px;
+  height: 44px;
+}
+
+.aside__cost-log {
+  position: absolute;
+  bottom: 18px;
+  color: #606060;
+  font-size: 14px;
+}
+
+.aside__cost-corporate {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 20px;
+}
+
+.aside__cost-cor-name {
+  font-size: 14px;
+  color: #101010;
+  margin-right: 26px;
+}
+
+.aside__cost-cor-log {
+  font-size: 12px;
+  color: #2196f3;
+  margin-right: 5px;
+}
+
+.aside__cost-cor-price {
+  font-size: 14px;
+  color: #101010;
+}
+
+.aside__bar-short {
+  position: absolute;
+  top: 98px;
+  right: 20px;
+  width: 180px;
+}
+
+.aside__cost-corporate--02 {
+  position: absolute;
+  top: 110px;
+}
+
+.aside__bar-short--02 {
+  position: absolute;
+  top: 138px;
+}
+
+.aside__cost-corporate--03 {
+  position: absolute;
+  top: 150px;
+}
+
+.aside__bar-short--03 {
+  position: absolute;
+  top: 178px;
+}
+
+.aside__cost-corporate--04 {
+  position: absolute;
+  top: 190px;
+}
+
+.aside__bar-short--04 {
+  position: absolute;
+  top: 218px;
+}
+
+/* 광고2 */
+.aside-add-box2 {
+  height: 80px;
+}
+
+/* 보드판 */
+.aside-board-box {
+  height: 902px;
+  background-color: #f4f6fa;
+  padding: 15px 18px 20px;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+.aside__board-container {
+  border: 1px solid red;
+  position: relative;
+  width: 384px;
+  height: 698px;
+}
+
+.aside__board-common {
+  background-color: #fff;
+  float: left;
+  width: 186px;
+  height: 192px;
+  margin-top: 12px;
+  padding: 9px 7px;
+  box-shadow: 0 0 0 1px #ebebeb, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+.aside__board-cal-title {
+  padding-left: 11px;
+  width: 70px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.aside__board-day-box {
+  position: relative;
+  padding: 25px 10px;
+  height: 20px;
+  color: black;
+}
+
+.aside__board-cal-date {
+  margin-right: 15px;
+  font-size: 3rem;
+  line-height: 36px;
+  letter-spacing: -2px;
+  text-decoration: none;
+}
+
+.aside__board-cal-day {
+  position: absolute;
+  right: 65px;
+  bottom: 5px;
+}
+
+.aside__board-cal-login {
+  display: flex;
+  align-items: end;
+  padding-left: 11px;
+  height: 80px;
+  color: #606060;
+  text-decoration: underline;
+}
+
+/* 슬라이더 */
+.aside-slider-box {
+  height: 80px;
 }
