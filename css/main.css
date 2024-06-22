@@ -1,7 +1,6 @@
 /* main 영역 */
 
 .main {
-  border: 2px solid hotpink;
   position: relative;
   display: flex;
   width: 1280px;
@@ -175,7 +174,7 @@
   font-weight: 500;
 }
 
-/* /-날씨 */
+/* 날씨 */
 .aside__weather-info-box {
   display: block;
   padding: 8px 18px;
@@ -271,10 +270,14 @@
 }
 
 .aside__weather-right {
-  border: 2px solid gray;
-  box-sizing: border-box;
   width: 180px;
   height: 183px;
+}
+
+.aside__weather-right-time-temp {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .aside__weather-left-img {
@@ -355,12 +358,6 @@
 .aside__weather-left-dust-des {
   padding-left: 4px;
   color: #02c73c;
-}
-
-.aside__weather-right-time-temp {
-  border: 1px solid red;
-  width: 32px;
-  height: 143px;
 }
 
 /* 주식 */
@@ -494,7 +491,7 @@
 
 /* 보드판 */
 .aside-board-box {
-  height: 902px;
+  height: 845px;
   background-color: #f4f6fa;
   padding: 15px 18px 20px;
   box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
@@ -502,7 +499,6 @@
 }
 
 .aside__board-container {
-  border: 1px solid red;
   position: relative;
   width: 384px;
   height: 698px;
@@ -517,8 +513,10 @@
   padding: 9px 7px;
   box-shadow: 0 0 0 1px #ebebeb, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
+/* 보드판 달력 */
 .aside__board-cal-title {
   padding-left: 11px;
   width: 70px;
@@ -554,12 +552,319 @@
   display: flex;
   align-items: end;
   padding-left: 11px;
-  height: 80px;
+  height: 70px;
   color: #606060;
   text-decoration: underline;
 }
 
+/* 보드반 메모 */
+.aside__board-memo {
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.aside__memo-box {
+  width: 186px;
+  height: 48px;
+  padding: 7px 9px;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #00c772;
+  background-color: #00c772;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.aside__memo-box div {
+  padding: 7px 0 0 0;
+}
+
+.aside__memo-line {
+  box-sizing: border-box;
+  width: 186px;
+  height: 46px;
+  padding: 0 18px;
+  border-top: 1px solid #ebebeb;
+}
+
+.aside__memo-dash {
+  padding: 0;
+  width: 185px;
+  height: 1px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+}
+
+.aside__memo-line--01 {
+  border: none;
+}
+
+.aside__board-memo-login {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 43px;
+  color: #606060;
+  text-decoration: underline;
+}
+
+/* 보드판 파파고 */
+.aside__board-papago {
+  position: absolute;
+  left: 0;
+  top: 204px;
+  padding: 18px 18px 12px 18px;
+}
+
+.aside__board-engDic {
+  position: absolute;
+  right: 0px;
+  top: 204px;
+}
+
+.aside__papago-title {
+  width: 76px;
+  height: 17px;
+  background-image: url(../assets/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: 0px -270px;
+  background-repeat: no-repeat;
+}
+
+.aside__papago-img {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 68px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.aside__papago-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 15px;
+  width: 124px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #00a2ff;
+  color: white;
+  font-weight: bold;
+}
+
+/* 보드판 영어사전 */
+.aside__board-engDic-title {
+  padding: 16px 18px 19px;
+  width: 142px;
+  height: 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.aside__board-enDic-line {
+  width: 186px;
+  height: 20px;
+  border-top: 2px solid #e9effb;
+  transform: translateX(-4%);
+}
+
+.aside__board-enDic-line--black {
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* 보드판 vibe */
+.aside__board-vibe {
+  position: absolute;
+  bottom: 0;
+  width: 384px;
+  height: 278px;
+}
+
+.aside__board-vibe-title-box {
+  display: flex;
+  width: 384px;
+  height: 37px;
+  padding: 15px 18px 0;
+  box-sizing: border-box;
+}
+
+.aside__board-vibe-logo {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -69px -288px;
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 18px;
+  margin: 2px 8px 0 0;
+}
+
+.aside__board-vibe-title {
+  margin-top: 2px;
+  width: 130px;
+  height: 20px;
+  color: #080808;
+  font-weight: 800;
+}
+
+.aside__board-vibe-recommand {
+  color: #606060;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+.aside__board-vibe-music-box {
+  display: flex;
+  margin: 13px 0 18px 18px;
+  width: 348px;
+  height: 210px;
+  box-sizing: border-box;
+}
+
+.aside__board-vive-music {
+  position: relative;
+  margin-right: 12px;
+  width: 108px;
+  height: 210px;
+  box-sizing: border-box;
+}
+
+.aside__board-vive-music-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 50px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aside__board-vive-music-play i {
+  color: white;
+}
+
+.aside__board-vive-music-img {
+  width: 108px;
+  height: 162px;
+}
+
+.aside__board-vibe-music-des {
+  display: block;
+  margin-top: 7px;
+  width: 108px;
+  color: #101010;
+  font-size: 15px;
+}
+
+.aside__mobile-box {
+  position: relative;
+  margin-top: 5px;
+  width: 384px;
+  height: 63px;
+  padding: 21px 0 17px;
+  box-sizing: border-box;
+}
+
+.aside__mobile-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -397px -223px;
+  background-repeat: no-repeat;
+  margin: 2px 11px 0 3px;
+}
+
+.aside__mobile-des {
+  position: absolute;
+  left: 35px;
+  bottom: 20px;
+  color: #101010;
+  font-weight: bold;
+}
+
+.aside__mobile-des-small {
+  position: absolute;
+  left: 181px;
+  bottom: 20px;
+  color: #101010;
+}
+
+.aside__mobile-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  color: #d3d5d7;
+}
+
 /* 슬라이더 */
 .aside-slider-box {
+  position: relative;
+  padding: 8px 50px 8px 18px;
+  width: 420px;
   height: 80px;
+  box-sizing: border-box;
+}
+
+.aside__slider-icon-box {
+  position: absolute;
+  top: 20px;
+  width: 42px;
+  height: 42px;
+}
+
+.aside__slider-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aside__slider-title {
+  position: absolute;
+  left: 80px;
+  top: 23px;
+  color: #404040;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.aside__slider-des {
+  position: absolute;
+  left: 80px;
+  top: 47px;
+  font-size: 15px;
+  color: #696969;
+}
+
+.aside__slider__progress-bar {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  outline: 1px solid #03c75a;
+  margin-right: 5px;
+  background-color: #03c75a;
+}
+
+.aside__slider__progress-bar--gray {
+  right: 30px;
+  background-color: #d3d5d7;
+  outline: 1px solid #d3d5d7;
 }
