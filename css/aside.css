@@ -1,0 +1,869 @@
+/* main 영역 */
+
+.main {
+  position: relative;
+  display: flex;
+  width: 1280px;
+  height: 2360px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+/* main - 구역 나누기 */
+.section {
+  border: 2px solid blue;
+  width: 830px;
+  height: 2300px;
+}
+
+.aside {
+  width: 420px;
+  height: 2094px;
+  margin-left: 30px;
+}
+
+/* aside 영역 */
+.aside-box {
+  display: block;
+  margin-top: 15px;
+  width: 420px;
+  position: relative;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  text-decoration: none;
+}
+
+/* 로그인 */
+.aside__login-box {
+  height: 164px;
+  padding: 21px 20px 18px;
+  margin-top: 0;
+}
+.aside__login-des {
+  width: 380px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.aside__login {
+  display: block;
+  display: flex;
+  justify-content: center;
+  margin: 13px 0;
+  padding: 17px 0;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  background-color: #03c75a;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(3, 199, 90, 0.12);
+  box-shadow: 0 2px 4px 0 rgba(3, 199, 90, 0.12);
+  text-decoration: none;
+  color: #fff;
+}
+
+.aside__login-img {
+  width: 72px;
+  height: 14px;
+  margin: 3px 10px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -142px -270px;
+  background-repeat: no-repeat;
+}
+
+.aside__login-info-box {
+  width: 380px;
+  height: 20px;
+}
+
+.aside__login-info-list {
+  display: flex;
+  justify-content: center;
+}
+
+.aside__login-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.aside__login-info-link {
+  display: block;
+  margin: 0px 12px 0;
+  color: #4e4e4e;
+  text-decoration: none;
+}
+
+.aside__login-bar {
+  width: 1px;
+  height: 12px;
+  background-color: #d3d5d7;
+}
+
+/* 광고 */
+.aside__add-box {
+  padding: 18px 18px 0;
+  height: 240px;
+  color: black;
+}
+
+.aside__add-title {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.asdie__add-img-box {
+  width: 195px;
+  height: 130px;
+  margin-top: 15px;
+}
+
+.asdie__add-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.asdie__add-des {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  top: 60px;
+  width: 180px;
+  height: 130px;
+  border-top: 1px solid #e3e5e8;
+  border-bottom: 1px solid #e3e5e8;
+  color: #303038;
+  font-size: 17px;
+}
+
+.asdie__add-brand-img-box {
+  width: 22px;
+  height: 22px;
+  margin-right: 6px;
+  margin-top: 15px;
+}
+
+.asdie__add-brand-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.asdie__add-brand-name {
+  position: absolute;
+  bottom: 20px;
+  left: 45px;
+  color: #424244;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.asdie__add-buy-link {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  color: #505052;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* 날씨 */
+.aside__weather-info-box {
+  display: block;
+  padding: 8px 18px;
+  margin-top: 15px;
+  height: 56px;
+}
+
+.aside__weather-info-important {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  width: 70px;
+  height: 25px;
+  border-radius: 15px;
+  background-color: #e64746;
+  font-weight: bold;
+  font-size: 13px;
+  color: #fff;
+}
+
+.aside__weather-info-des {
+  position: absolute;
+  top: 19px;
+  left: 95px;
+  color: black;
+  font-weight: bold;
+}
+
+.aside__weather-box {
+  padding: 0 18px;
+  height: 236px;
+}
+
+.aside__title {
+  padding: 16px 0;
+  width: 70px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.aside__weather-compare {
+  position: absolute;
+  top: 14px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 5px;
+  width: 95px;
+  height: 26px;
+  border: 1px solid #e3e5e8;
+  border-radius: 15px;
+  color: #606060;
+  font-size: 15px;
+}
+
+.aside__weather-compare-icon {
+  margin: 0 8px;
+  width: 12px;
+  height: 12px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -208px -422px;
+  background-repeat: no-repeat;
+}
+
+.aside__title-des {
+  position: absolute;
+  top: 19px;
+  right: 18px;
+  color: #606060;
+}
+
+.aside__bar {
+  display: flex;
+  position: relative;
+  border-top: 1px solid #e3e5e8;
+  box-sizing: border-box;
+  width: 384px;
+  height: 183px;
+}
+
+.aside__weather-left {
+  position: relative;
+  box-sizing: border-box;
+  width: 180px;
+  height: 183px;
+  margin-right: 24px;
+}
+
+.aside__weather-right {
+  width: 180px;
+  height: 183px;
+}
+
+.aside__weather-right-time-temp {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.aside__weather-left-img {
+  width: 86px;
+  height: 86px;
+  margin-right: 4px;
+  display: block;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_weather.11654bc0.png);
+  background-size: 641px 587px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+}
+
+.aside__weather-left-temp {
+  width: 86px;
+  height: 63px;
+}
+
+.aside__weather-left-temp {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 40px;
+  color: black;
+}
+
+.aside__weather-left-temp-des {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.aside__weather-left-cmp {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 50px;
+  right: 60px;
+  width: 60px;
+}
+
+.aside__weather-left-temp-low {
+  color: #3172e7;
+  font-weight: 500;
+}
+
+.aside__weather-left-temp-high {
+  color: #cd3534;
+  font-weight: 500;
+}
+
+.aside__weather-left-temp-bar {
+  width: 1px;
+  height: 11px;
+  background-color: #d3d5d7;
+  margin: 0 5px 0 3px;
+  transform: skewX(-15deg);
+  vertical-align: -1px;
+}
+
+.adie__weather-left-dust-box {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  right: 1px;
+  width: 170px;
+}
+
+.aside__weather-left-dust,
+.aside__weather-left-semi-dust {
+  color: #101010;
+}
+
+.aside__weather-left-semi-dust {
+  margin-left: 15px;
+}
+
+.aside__weather-left-dust-des {
+  padding-left: 4px;
+  color: #02c73c;
+}
+
+/* 주식 */
+.aside-cost-box {
+  padding: 0 18px;
+  height: 236px;
+}
+
+.aside-cost-icon {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -169px -401px;
+  background-repeat: no-repeat;
+  width: 14px;
+  height: 14px;
+  margin: auto;
+  position: absolute;
+  top: 20px;
+  left: 60px;
+}
+
+.aside__cost-dollar {
+  position: absolute;
+  top: 70px;
+  font-size: 16px;
+  color: #101010;
+}
+
+.aside__cost-price {
+  position: absolute;
+  top: 90px;
+  font-size: 30px;
+  color: #101010;
+}
+
+.aside__cost-change {
+  position: absolute;
+  top: 125px;
+  left: 20px;
+  color: #2196f3;
+}
+
+.aside__cost-graph-box {
+  position: absolute;
+  bottom: 40px;
+  box-sizing: border-box;
+  width: 180px;
+  height: 44px;
+}
+
+.aside__cost-graph {
+  width: 180px;
+  height: 44px;
+}
+
+.aside__cost-log {
+  position: absolute;
+  bottom: 18px;
+  color: #606060;
+  font-size: 14px;
+}
+
+.aside__cost-corporate {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 20px;
+}
+
+.aside__cost-cor-name {
+  font-size: 14px;
+  color: #101010;
+  margin-right: 26px;
+}
+
+.aside__cost-cor-log {
+  font-size: 12px;
+  color: #2196f3;
+  margin-right: 5px;
+}
+
+.aside__cost-cor-price {
+  font-size: 14px;
+  color: #101010;
+}
+
+.aside__bar-short {
+  position: absolute;
+  top: 98px;
+  right: 20px;
+  width: 180px;
+}
+
+.aside__cost-corporate--02 {
+  position: absolute;
+  top: 110px;
+}
+
+.aside__bar-short--02 {
+  position: absolute;
+  top: 138px;
+}
+
+.aside__cost-corporate--03 {
+  position: absolute;
+  top: 150px;
+}
+
+.aside__bar-short--03 {
+  position: absolute;
+  top: 178px;
+}
+
+.aside__cost-corporate--04 {
+  position: absolute;
+  top: 190px;
+}
+
+.aside__bar-short--04 {
+  position: absolute;
+  top: 218px;
+}
+
+/* 광고2 */
+.aside-add-box2 {
+  height: 80px;
+}
+
+/* 보드판 */
+.aside-board-box {
+  height: 845px;
+  background-color: #f4f6fa;
+  padding: 15px 18px 20px;
+  box-shadow: 0 0 0 1px #e3e5e8, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+}
+
+.aside__board-container {
+  position: relative;
+  width: 384px;
+  height: 698px;
+}
+
+.aside__board-common {
+  background-color: #fff;
+  float: left;
+  width: 186px;
+  height: 192px;
+  margin-top: 12px;
+  padding: 9px 7px;
+  box-shadow: 0 0 0 1px #ebebeb, 0 1px 2px 0 rgba(0, 0, 0, 0.04);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* 보드판 달력 */
+.aside__board-cal-title {
+  padding-left: 11px;
+  width: 70px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.aside__board-day-box {
+  position: relative;
+  padding: 25px 10px;
+  height: 20px;
+  color: black;
+}
+
+.aside__board-cal-date {
+  margin-right: 15px;
+  font-size: 3rem;
+  line-height: 36px;
+  letter-spacing: -2px;
+  text-decoration: none;
+}
+
+.aside__board-cal-day {
+  position: absolute;
+  right: 65px;
+  bottom: 5px;
+}
+
+.aside__board-cal-login {
+  display: flex;
+  align-items: end;
+  padding-left: 11px;
+  height: 70px;
+  color: #606060;
+  text-decoration: underline;
+}
+
+/* 보드반 메모 */
+.aside__board-memo {
+  padding: 0;
+  position: absolute;
+  right: 0;
+}
+
+.aside__memo-box {
+  width: 186px;
+  height: 48px;
+  padding: 7px 9px;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #00c772;
+  background-color: #00c772;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.aside__memo-box div {
+  padding: 7px 0 0 0;
+}
+
+.aside__memo-line {
+  box-sizing: border-box;
+  width: 186px;
+  height: 46px;
+  padding: 0 18px;
+  border-top: 1px solid #ebebeb;
+}
+
+.aside__memo-dash {
+  padding: 0;
+  width: 185px;
+  height: 1px;
+  border-bottom: 2px dashed rgba(255, 255, 255, 0.4);
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+}
+
+.aside__memo-line--01 {
+  border: none;
+}
+
+.aside__board-memo-login {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 43px;
+  color: #606060;
+  text-decoration: underline;
+}
+
+/* 보드판 파파고 */
+.aside__board-papago {
+  position: absolute;
+  left: 0;
+  top: 204px;
+  padding: 18px 18px 12px 18px;
+}
+
+.aside__board-engDic {
+  position: absolute;
+  right: 0px;
+  top: 204px;
+}
+
+.aside__papago-title {
+  width: 76px;
+  height: 17px;
+  background-image: url(../assets/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: 0px -270px;
+  background-repeat: no-repeat;
+}
+
+.aside__papago-img {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  width: 78px;
+  height: 68px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+
+.aside__papago-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 15px;
+  width: 124px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #00a2ff;
+  color: white;
+  font-weight: bold;
+}
+
+/* 보드판 영어사전 */
+.aside__board-engDic-title {
+  padding: 16px 18px 19px;
+  width: 142px;
+  height: 20px;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  line-height: 22px;
+}
+
+.aside__board-enDic-line {
+  width: 186px;
+  height: 20px;
+  border-top: 2px solid #e9effb;
+  transform: translateX(-4%);
+}
+
+.aside__board-enDic-line--black {
+  padding-left: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+/* 보드판 vibe */
+.aside__board-vibe {
+  position: absolute;
+  bottom: 0;
+  width: 384px;
+  height: 278px;
+}
+
+.aside__board-vibe-title-box {
+  display: flex;
+  width: 384px;
+  height: 37px;
+  padding: 15px 18px 0;
+  box-sizing: border-box;
+}
+
+.aside__board-vibe-logo {
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -69px -288px;
+  background-repeat: no-repeat;
+  width: 68px;
+  height: 18px;
+  margin: 2px 8px 0 0;
+}
+
+.aside__board-vibe-title {
+  margin-top: 2px;
+  width: 130px;
+  height: 20px;
+  color: #080808;
+  font-weight: 800;
+}
+
+.aside__board-vibe-recommand {
+  color: #606060;
+  margin-left: 30px;
+  margin-top: 2px;
+}
+
+.aside__board-vibe-music-box {
+  display: flex;
+  margin: 13px 0 18px 18px;
+  width: 348px;
+  height: 210px;
+  box-sizing: border-box;
+}
+
+.aside__board-vive-music {
+  position: relative;
+  margin-right: 12px;
+  width: 108px;
+  height: 210px;
+  box-sizing: border-box;
+}
+
+.aside__board-vive-music-play {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 50px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.aside__board-vive-music-play i {
+  color: white;
+}
+
+.aside__board-vive-music-img {
+  width: 108px;
+  height: 162px;
+}
+
+.aside__board-vibe-music-des {
+  display: block;
+  margin-top: 7px;
+  width: 108px;
+  color: #101010;
+  font-size: 15px;
+}
+
+.aside__mobile-box {
+  position: relative;
+  margin-top: 5px;
+  width: 384px;
+  height: 63px;
+  padding: 21px 0 17px;
+  box-sizing: border-box;
+}
+
+.aside__mobile-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url(https://pm.pstatic.net/resources/asset/sp_main.712d35ae.png);
+  background-size: 442px 434px;
+  background-position: -397px -223px;
+  background-repeat: no-repeat;
+  margin: 2px 11px 0 3px;
+}
+
+.aside__mobile-des {
+  position: absolute;
+  left: 35px;
+  bottom: 20px;
+  color: #101010;
+  font-weight: bold;
+}
+
+.aside__mobile-des-small {
+  position: absolute;
+  left: 181px;
+  bottom: 20px;
+  color: #101010;
+}
+
+.aside__mobile-arrow {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  color: #d3d5d7;
+}
+
+/* 슬라이더 */
+.aside-slider-box {
+  position: relative;
+  padding: 8px 50px 8px 18px;
+  width: 420px;
+  height: 80px;
+  box-sizing: border-box;
+}
+
+.aside__slider-icon-box {
+  position: absolute;
+  top: 20px;
+  width: 42px;
+  height: 42px;
+}
+
+.aside__slider-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.aside__slider-title {
+  position: absolute;
+  left: 80px;
+  top: 23px;
+  color: #404040;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.aside__slider-des {
+  position: absolute;
+  left: 80px;
+  top: 47px;
+  font-size: 15px;
+  color: #696969;
+}
+
+.aside__slider__progress-bar {
+  position: absolute;
+  right: 20px;
+  top: 35px;
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  outline: 1px solid #03c75a;
+  margin-right: 5px;
+  background-color: #03c75a;
+}
+
+.aside__slider__progress-bar--gray {
+  right: 30px;
+  background-color: #d3d5d7;
+  outline: 1px solid #d3d5d7;
+}
