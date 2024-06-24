@@ -66,14 +66,20 @@
   transform: translateX(-50%);
 }
 
-.search-logo {
-  border: 1px solid black;
-  width: 67px;
-  height: 60px;
+.search-logo-img-box {
+  margin-top: 18px;
+  margin-left: 25px;
+  width: 25px;
+  height: 25px;
+}
+
+.search-logo-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .search-box {
-  border: 1px solid black;
   display: flex;
   position: absolute;
   top: 0;
@@ -84,7 +90,6 @@
 }
 
 .search-keyboard-btn {
-  border: 1px solid red;
   display: block;
   width: 24px;
   height: 14px;
@@ -107,12 +112,17 @@
 }
 
 .search-btn {
-  border: 1px solid green;
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 62px;
-  height: 58px;
+  right: 28px;
+  top: 12px;
+  width: 30px;
+  height: 35px;
+}
+
+.search-btn-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .shortcut-list {

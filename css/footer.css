@@ -1,0 +1,172 @@
+.footer {
+  min-width: 1340px;
+  height: 435px;
+  border-top: 1px solid #ebebeb;
+  background-color: #f5f6f7;
+}
+
+.footer__inner {
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 78px;
+}
+
+.footer__box {
+  width: 1280px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.footer__add-box {
+  display: flex;
+  padding: 30px 0;
+}
+
+.footer__add-item {
+  display: flex;
+  width: 410px;
+  height: 100px;
+}
+
+.footer__add-img-box {
+  width: 160px;
+  height: 100px;
+  border-radius: 6px;
+}
+
+.footer__add-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__add-des-box {
+  width: 250px;
+  height: 100px;
+  padding: 5px 3px 0 18px;
+  box-sizing: border-box;
+}
+
+.footer__add-name {
+  height: 20px;
+  width: 80px;
+  padding: 0 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.25px;
+  color: #fff;
+  background-color: #a0adb2;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+
+.footer__add-ment {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.footer__add-des {
+  margin-top: 6px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #545454;
+}
+
+.footer__info-box {
+  position: relative;
+  padding: 21px 0;
+  height: 60px;
+  box-sizing: border-box;
+}
+
+.footer__info {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer__info-des {
+  position: absolute;
+  top: 20px;
+  left: 65px;
+  font-size: 15px;
+  color: #404040;
+}
+
+.footer__info-more-box {
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+
+.footer__info-more {
+  font-size: 14px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.footer__info-more-box i {
+  color: #404040;
+}
+
+.footer__partner-box {
+  height: 91px;
+  box-sizing: border-box;
+}
+
+.footer__partner-list-box {
+  position: relative;
+  height: 91px;
+  box-sizing: border-box;
+}
+
+.footer__partner-list-item {
+  position: absolute;
+  top: 20px;
+  display: flex;
+  height: 20px;
+}
+
+.footer__partner-list-item--02 {
+  top: 50px;
+}
+
+.footer__partner-title {
+  margin-right: 40px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer__partner-info-box {
+  display: flex;
+  align-items: center;
+}
+
+.footer__name {
+  font-size: 14px;
+  color: #404040;
+  margin: 0 9px;
+}
+
+.footer__name-bar {
+  width: 1px;
+  height: 12px;
+  background-color: #d3d5d7;
+}
+
+.footer__cor-box {
+  position: relative;
+  height: 40px;
+  border: none;
+  box-sizing: border-box;
+}
+
+.footer__cor-info-box {
+  position: absolute;
+  top: 20px;
+  left: 250px;
+  display: flex;
+  align-items: center;
+}

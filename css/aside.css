@@ -4,16 +4,15 @@
   position: relative;
   display: flex;
   width: 1280px;
-  height: 2360px;
+  height: 2140px;
   margin: 0 auto;
   padding-bottom: 60px;
 }
 
 /* main - 구역 나누기 */
 .section {
-  border: 2px solid blue;
   width: 830px;
-  height: 2300px;
+  height: 2200px;
 }
 
 .aside {

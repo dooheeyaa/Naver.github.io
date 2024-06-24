@@ -200,7 +200,6 @@
 }
 
 .main__section-more-des-box {
-  border: 1px solid brown;
   display: flex;
   align-items: center;
 }
@@ -261,7 +260,6 @@
 }
 
 .main__section-shop-list-box {
-  border: 1px solid red;
   display: flex;
   margin-top: 18px;
   padding: 0 20px 1px;
@@ -271,7 +269,6 @@
 }
 
 .main__section-shop-left {
-  border: 1px solid red;
   margin-right: 20px;
   width: 520px;
   height: 375px;
@@ -279,7 +276,6 @@
 }
 
 .main__section-shop-right {
-  border: 1px solid blue;
   padding-left: 21px;
   width: 252.45px;
   height: 375px;
@@ -287,10 +283,13 @@
 }
 
 .main__section-shop-left-box {
+  display: block;
   display: flex;
   width: 520px;
   height: 189px;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
 .main__section-shop-left-item {
@@ -342,6 +341,7 @@
   margin-right: 2.1px;
   font-weight: bold;
   color: #101010;
+  text-decoration: none;
 }
 
 .main__section-shop-right-deal-des {
@@ -349,14 +349,15 @@
 }
 
 .main__section-shop-right-box {
-  border: 1px solid red;
+  display: block;
   width: 232px;
   height: 300px;
   box-sizing: border-box;
+  text-decoration: none;
+  color: black;
 }
 
 .main__section-shop-right-item-box {
-  border: 1px solid green;
   display: flex;
   align-items: center;
   margin-bottom: 12px;
@@ -376,14 +377,99 @@
 }
 
 .main__section-shop-right-item-des-box {
-  border: 1px solid black;
   margin-left: 15px;
   width: 125.5px;
   height: 61px;
 }
 
 .main__section-shop-right-item-des {
+  width: 122px;
+  height: 38px;
+  overflow: hidden;
+  max-height: 38px;
+  line-height: 19px;
+  text-overflow: ellipsis;
+  font-size: 13px;
 }
 
-.main__section-shop-right-item-des {
+.main__section-shop-right-item-price {
+  margin-top: 4px;
+  width: 122px;
+  height: 19px;
+  box-sizing: border-box;
+  color: red;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.main__section-hobby-box {
+  height: 761px;
+}
+
+.main__section-hobby-container {
+  display: block;
+  padding: 0 20px;
+  width: 830px;
+  height: 642px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+}
+.main__section-hobby-list {
+  display: flex;
+  width: 790px;
+  height: 214px;
+  box-sizing: border-box;
+}
+
+.main__section-hobby-list-item {
+  padding: 0 20px 20px 0;
+  width: 197.5px;
+  height: 214px;
+  box-sizing: border-box;
+}
+
+.main__section-hobby-img-box {
+  width: 182.5px;
+  height: 120px;
+}
+
+.main__section-hobby-img {
+  border-radius: 4px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__section-hobby-des {
+  margin-top: 10px;
+  overflow: hidden;
+  max-height: 40px;
+  line-height: 20px;
+  text-overflow: ellipsis;
+  width: 182.5px;
+  height: 50px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.main__section-hobby-user-box {
+  display: flex;
+  align-items: center;
+  margin-top: 4px;
+  width: 182.5px;
+  height: 20px;
+  box-sizing: border-box;
+}
+
+.main__section-hobby-user-img {
+  margin: 0 6px 0 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.main__section-hobby-user-name {
+  font-size: 13px;
+  color: #606060;
 }
